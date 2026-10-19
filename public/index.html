@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMAMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Inventory Management and Monitoring System</h1>
+
+  <form id="material-form">
+    <input type="text" id="name" placeholder="Material name" required />
+    <input type="number" id="quantity" placeholder="Quantity" min="0" step="any" required />
+    <input type="text" id="unit" placeholder="Unit (kg, pcs, bags)" required />
+    <button type="submit">Add Material</button>
+  </form>
+
+  <p id="message"></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="material-list"></tbody>
+
+    <!-- Bakante dito tayo mag didisplay -->
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
